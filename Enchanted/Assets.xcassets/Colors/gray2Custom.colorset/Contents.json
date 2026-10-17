@@ -24,6 +24,36 @@
         "reference" : "systemGray2Color"
       },
       "idiom" : "universal"
+    },
+    {
+      "color" : {
+        "color-space" : "display-p3",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.679",
+          "green" : "0.697",
+          "red" : "0.676"
+        }
+      },
+      "idiom" : "mac"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "extended-srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.400",
+          "green" : "0.388",
+          "red" : "0.388"
+        }
+      },
+      "idiom" : "mac"
     }
   ],
   "info" : {
