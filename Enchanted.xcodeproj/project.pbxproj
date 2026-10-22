@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E9C3F8F995B5795AA862AA1 /* CompletionTemplateLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CE1802A4672F3425639D90 /* CompletionTemplateLibraryView.swift */; };
+		05D1150D7B9881E85CC0A778 /* CompletionTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6186B45CD96DFF745A8BD87D /* CompletionTemplate.swift */; };
 		3396E0762BD877D500213816 /* Menus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396E0752BD877D500213816 /* Menus.swift */; };
 		FF0146CB2B3DA1DF00A2A9F6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0146CA2B3DA1DF00A2A9F6 /* Settings.swift */; };
 		FF0146CD2B3DADCA00A2A9F6 /* HapticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0146CC2B3DADCA00A2A9F6 /* HapticsService.swift */; };
@@ -106,6 +108,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77CE1802A4672F3425639D90 /* CompletionTemplateLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionTemplateLibraryView.swift; sourceTree = "<group>"; };
+		6186B45CD96DFF745A8BD87D /* CompletionTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionTemplate.swift; sourceTree = "<group>"; };
 		3396E0752BD877D500213816 /* Menus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menus.swift; sourceTree = "<group>"; };
 		FF0146CA2B3DA1DF00A2A9F6 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		FF0146CC2B3DADCA00A2A9F6 /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
@@ -383,6 +387,7 @@
 			children = (
 				FF6D821F2B916CC3001183A8 /* CompletionsEditor.swift */,
 				FF6D821B2B914202001183A8 /* CompletionsEditorView.swift */,
+				77CE1802A4672F3425639D90 /* CompletionTemplateLibraryView.swift */,
 				FF6D821D2B916053001183A8 /* UpsertCompletionView.swift */,
 			);
 			path = CompletionsEditor;
@@ -509,6 +514,7 @@
 			isa = PBXGroup;
 			children = (
 				FF1002722B276EC10011A4DC /* AppColorScheme.swift */,
+				6186B45CD96DFF745A8BD87D /* CompletionTemplate.swift */,
 				FF10025D2B2648460011A4DC /* ConversationState.swift */,
 				FF9C92092BF0B7B1004C8275 /* LanguageModel.swift */,
 				FFEB9CA72BA04304004B1F3D /* NotificationMessage.swift */,
@@ -657,6 +663,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E9C3F8F995B5795AA862AA1 /* CompletionTemplateLibraryView.swift in Sources */,
+				05D1150D7B9881E85CC0A778 /* CompletionTemplate.swift in Sources */,
 				FF6D82252B9204F3001183A8 /* AsyncQueue.swift in Sources */,
 				FF1002442B25BB730011A4DC /* ConversationStore.swift in Sources */,
 				FF15EF6A2B826C0300D4A541 /* SimpleFloatingButton.swift in Sources */,

@@ -13,6 +13,7 @@ struct CompletionsEditorView: View {
     @Environment(\.presentationMode) var presentationMode
     @Binding var completions: [CompletionInstructionSD]
     @State var selectedCompletion: CompletionInstructionSD?
+    @State private var showTemplateLibrary = false
     var onSave: () -> ()
     var onDelete: (CompletionInstructionSD) -> ()
     var accessibilityAccess: Bool
@@ -67,6 +68,11 @@ struct CompletionsEditorView: View {
             HStack(alignment: .center) {
                 KeyboardShortcuts.Recorder("Keyboard shortcut", name: .togglePanelMode)
                 Spacer()
+                Button(action: { showTemplateLibrary = true }) {
+                    Text("Template Library")
+                        .foregroundStyle(.blue)
+                }
+                .buttonStyle(GrowingButton())
                 Button(action: newCompletion) {
                     Text("New Completion")
                         .foregroundStyle(.blue)
@@ -132,6 +138,9 @@ struct CompletionsEditorView: View {
                         discard(for: selectedCompletion)
                     }
                 }
+        }
+        .sheet(isPresented: $showTemplateLibrary) {
+            CompletionTemplateLibraryView(completions: $completions, onSave: onSave)
         }
     }
 }
